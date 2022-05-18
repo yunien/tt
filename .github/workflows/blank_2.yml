@@ -38,7 +38,7 @@ jobs:
   build-prod:
     runs-on: tt
     environment: prod
-      
+    needs: build-dev
     steps:
       - name: Run a prod env script
         run: |
